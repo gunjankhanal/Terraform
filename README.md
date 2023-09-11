@@ -9,7 +9,7 @@
 
 BASIC TERRAFORM DEVELOPER INTERVIEW QUESTIONS AND ANSWERS
 1.
-What is Terraform, and why is it used in the context of infrastructure automation?
+What is Terraform, and why is it used in the context of infrastructure automation? 
 Hide Answer
 Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It allows you to define and manage your infrastructure declaratively using a simple and human-readable configuration language.
 Terraform is used for infrastructure automation to provision and manage resources across various cloud providers and on-premises environments in a consistent and reproducible manner.
