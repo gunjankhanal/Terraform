@@ -12,17 +12,17 @@ BASIC TERRAFORM DEVELOPER INTERVIEW QUESTIONS AND ANSWERS
 What is Terraform, and why is it used in the context of infrastructure automation? <br/>
 Hide Answer
 Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It allows you to define and manage your infrastructure declaratively using a simple and human-readable configuration language.
-Terraform is used for infrastructure automation to provision and manage resources across various cloud providers and on-premises environments in a consistent and reproducible manner.
+Terraform is used for infrastructure automation to provision and manage resources across various cloud providers and on-premises environments in a consistent and reproducible manner.<br/>
 2.
 Explain the difference between declarative and imperative approaches in infrastructure provisioning.<br/>
 Hide Answer
 In declarative provisioning, you define the desired end state of your infrastructure without specifying the exact steps to reach that state. Terraform follows a declarative approach, where you describe the desired infrastructure configuration, and it automatically determines the necessary actions to create or modify resources.
-In contrast, the imperative approach involves specifying explicit instructions or commands to perform each step of infrastructure provisioning. Examples of imperative tools include shell scripts or configuration management tools like Ansible or Chef.
+In contrast, the imperative approach involves specifying explicit instructions or commands to perform each step of infrastructure provisioning. Examples of imperative tools include shell scripts or configuration management tools like Ansible or Chef.<br/>
 3.
 How does Terraform ensure the idempotency of resource provisioning?<br/>
 Hide Answer
 Terraform ensures idempotency by maintaining a state file that keeps track of the resources it manages. When you run Terraform apply, Terraform compares the desired state described in the configuration with the current state recorded in the state file.
-It then determines the necessary actions to reach the desired state and applies only the required changes to achieve that state. This approach allows Terraform to converge the infrastructure to the desired state regardless of the number of times you run Terraform.
+It then determines the necessary actions to reach the desired state and applies only the required changes to achieve that state. This approach allows Terraform to converge the infrastructure to the desired state regardless of the number of times you run Terraform.<br/>
 4.
 What are the main advantages of using Terraform over traditional infrastructure provisioning methods?<br/>
 Hide Answer
@@ -31,12 +31,12 @@ Infrastructure as code: Terraform allows you to define your infrastructure in co
 Automation and reproducibility: Terraform automates the provisioning process, making it repeatable and consistent across environments.
 Cloud-agnostic: Terraform supports multiple cloud providers, allowing you to manage infrastructure using a single tool regardless of the underlying cloud technology.
 State management: Terraform tracks the state of managed resources, enabling it to make precise changes and perform updates intelligently.
-Scalability: Terraform can manage large and complex infrastructures, handle dependencies, and orchestrate resource provisioning efficiently.
+Scalability: Terraform can manage large and complex infrastructures, handle dependencies, and orchestrate resource provisioning efficiently.<br/>
 5.
 What is the Terraform state file, and why is it important?<br/>
 View Answer
 The Terraform state file is a JSON or binary file that stores the current state of the managed infrastructure. It records resource metadata, dependencies, and other relevant information. The state file is critical for Terraform's operation as it allows the tool to understand the existing infrastructure and track changes over time.
-It helps Terraform determine the delta between the desired state and the actual state during subsequent runs, enabling it to apply the necessary updates accurately.
+It helps Terraform determine the delta between the desired state and the actual state during subsequent runs, enabling it to apply the necessary updates accurately.<br/>
 6.
 Describe the lifecycle of a Terraform resource.<br/>
 View Answer
@@ -44,11 +44,11 @@ The lifecycle of a Terraform resource consists of four stages:
 Creation: When you define a resource in the Terraform configuration and run Terraform apply, Terraform creates the resource by making API calls to the provider.
 Update: If you modify the resource configuration, Terraform detects the changes during the next Terraform application. It determines the necessary updates and applies them to the existing resource, ensuring it matches the desired state.
 Read: During the Terraform plan or Terraform apply commands, Terraform reads the current state from the state file and the provider to understand the existing infrastructure and compare it with the desired state.
-Deletion: If you remove a resource from the Terraform configuration and run Terraform apply, Terraform identifies the resource as no longer desired and proceeds to delete it from the infrastructure by making API calls to the provider.
+Deletion: If you remove a resource from the Terraform configuration and run Terraform apply, Terraform identifies the resource as no longer desired and proceeds to delete it from the infrastructure by making API calls to the provider.<br/>
 7.
 How can you specify dependencies between resources in Terraform?<br/>
 Hide Answer
-In Terraform, you can specify dependencies between resources using the depends_on attribute within resource blocks. By including this attribute, you define an explicit ordering of resource creation and ensure that one resource is created before another. This helps manage dependencies when one resource relies on the existence or configuration of another resource.
+In Terraform, you can specify dependencies between resources using the depends_on attribute within resource blocks. By including this attribute, you define an explicit ordering of resource creation and ensure that one resource is created before another. This helps manage dependencies when one resource relies on the existence or configuration of another resource.<br/>
 8.
 What is the purpose of the Terraform plan command?<br/>
 View Answer
