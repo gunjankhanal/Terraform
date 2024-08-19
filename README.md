@@ -14,7 +14,7 @@ Hide Answer
 Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It allows you to define and manage your infrastructure declaratively using a simple and human-readable configuration language.
 Terraform is used for infrastructure automation to provision and manage resources across various cloud providers and on-premises environments in a consistent and reproducible manner.
 2.
-Explain the difference between declarative and imperative approaches in infrastructure provisioning.< br / >
+Explain the difference between declarative and imperative approaches in infrastructure provisioning.<br / >
 Hide Answer
 In declarative provisioning, you define the desired end state of your infrastructure without specifying the exact steps to reach that state. Terraform follows a declarative approach, where you describe the desired infrastructure configuration, and it automatically determines the necessary actions to create or modify resources.
 In contrast, the imperative approach involves specifying explicit instructions or commands to perform each step of infrastructure provisioning. Examples of imperative tools include shell scripts or configuration management tools like Ansible or Chef.
